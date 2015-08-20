@@ -15,3 +15,11 @@ class PrimeTest(unittest.TestCase):
         self.assertTrue(prime.is_prime(2))
         self.assertTrue(prime.is_prime(3))
         self.assertTrue(prime.is_prime(11))
+
+class NthPrimeTest(unittest.TestCase):
+    def test_nth_prime(self):
+        self.assertEqual(prime.nth_prime(0), 2)
+        self.assertEqual(prime.nth_prime(1), 3)
+        self.assertEqual(prime.nth_prime(2), 5)
+        self.assertEqual(prime.nth_prime(10), 31)
+        self.assertEqual(prime.nth_prime(100), 547)
